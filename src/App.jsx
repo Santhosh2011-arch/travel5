@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="w-full container-fluid min-h-screen flex flex-col text-neutral-200 font-normal">
-        {/*  Navbar */}
+        
         <Navbar />
 
         {/* Main contents */}
@@ -24,7 +24,7 @@ function App() {
           <OurDestination />
         </div>
 
-        {/* Footers */}
+      
         <Footer />
       </div>
     </Router>

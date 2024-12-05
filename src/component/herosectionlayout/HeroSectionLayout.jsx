@@ -2,7 +2,7 @@ import React from "react";
 import PageTitle from "../title/PageTitle";
 
 const IndonesianTourism = () => {
-  // Example data for the grid items
+  
   const locations = [
     {
       title: "Bromo, East Java",

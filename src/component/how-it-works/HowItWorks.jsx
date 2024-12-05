@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import PageTitle from "../title/PageTitle";
 
 const HowItWorks = () => {
-  // State to handle form inputs
+  
   const [formData, setFormData] = useState({
     date: "",
     budget: "",
     guests: "",
   });
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -18,9 +18,9 @@ const HowItWorks = () => {
     }));
   };
 
-  // Handle form submission
+  
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault(); 
     alert(
       `Search Details:\nDate: ${formData.date}\nBudget: ${formData.budget}\nGuests: ${formData.guests}`
     );

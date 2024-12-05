@@ -13,7 +13,7 @@ const HeroSection = () => {
   const menuRef = useRef();
   const datePickerRef = useRef();
 
-  // Close dropdown if clicked outside
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {

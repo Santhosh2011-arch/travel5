@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8 mt-12">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Company Info */}
+        
         <div className="mb-4 md:mb-0">
           <h4 className="font-bold text-lg">Travel Inc.</h4>
           <p className="text-sm text-gray-400">&copy; 2024 Travel Inc. All rights reserved.</p>
