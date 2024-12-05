@@ -1,0 +1,172 @@
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: fit-content;
+  }
+  .web-absolute {
+    position: unset;
+  }
+  .indo-container {
+    margin-top: 525px !important;
+  }
+}
+
+html,
+body {
+  background-color: #f6f8fa;
+}
+
+.title-h2 {
+  color: #000;
+}
+
+.title-h3 {
+  color: #000;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.media-center {
+  margin: auto;
+}
+
+.indo-container {
+  margin-top: 120px;
+}
+
+/* Container styling */
+.how-it-works-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Left Section: Image with overlay */
+.left-section .image-container {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1.5rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  flex: 1;
+  color: #000;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.overlay-text {
+  font-size: 0.875rem;
+}
+
+/* Right Section: Steps */
+.right-section {
+  padding: 1rem;
+  margin-left: 30px;
+}
+
+.right-section h2 {
+  color: #6c757d;
+  font-size: 1.25rem;
+}
+
+.right-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.steps .step {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 5px 8px 8px 1px #eaeaea;
+}
+
+.steps .step h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.steps .step p {
+  font-size: 0.875rem;
+  color: #959191;
+}
+
+.text-input-ov {
+  width: 100px;
+}
+
+.card-ov {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.caladar-ov {
+  width: 100px;
+}
+
+.datepicker-placeholder::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.datepicker-placeholder:-ms-input-placeholder {
+  color: #000;
+}
+
+.datepicker-placeholder::-ms-input-placeholder {
+  color: #000;
+}
+
+.form-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hw-img {
+  max-height: 635px;
+}
