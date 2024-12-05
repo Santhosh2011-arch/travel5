@@ -1,7 +1,20 @@
+
+  @import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+  @font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('https://fonts.cdnfonts.com/css/mona-sans') format('woff2 supports variations'),
+      url('https://fonts.cdnfonts.com/css/mona-sans') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }            
+
 @media only screen and (max-width: 600px) {
   html,
   body {
     width: fit-content;
+    font-family: 'Mona Sans';
   }
   .web-absolute {
     position: unset;
@@ -13,7 +26,9 @@
 
 html,
 body {
-  background-color: #f6f8fa;
+  background-color: #f6f8fa;                                                                     font-family: 'Mona-Sans', sans-serif;
+  font-family: 'Mona Sans', sans-serif;
+
 }
 
 .title-h2 {
