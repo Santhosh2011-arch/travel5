@@ -72,7 +72,7 @@ const HeroSection = () => {
       >
       {/* Date Picker */}
       <div className="relative flex items-center gap-x-2">
-        <button
+         <button
           onClick={() => setDropdown((prev) => (prev === "date" ? null : "date"))}
           className="flex items-center gap-x-2 bg-white/50 px-4 py-2 rounded-full text-black"
           >
@@ -80,7 +80,7 @@ const HeroSection = () => {
               selected={startDate}
               onChange={(date) => setStartDate(date)}
               placeholderText="Select Date"
-              className="bg-transparent text-black focus:outline-none caladar-ov bg-transparent datepicker-placeholder"
+              className="bg-transparent text-black focus:outline-none caladar-ov  datepicker-placeholder"
             />
                 <FaChevronDown
                   onClick={handleIconClick} 

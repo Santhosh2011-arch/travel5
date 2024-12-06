@@ -1,14 +1,22 @@
 
-  @import url('https://fonts.cdnfonts.com/css/mona-sans');
+ 
+/* App.css */
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/assets/fonts/mona-sans.ttf') format('ttf'),
+       url('/assets/fonts/mona-sans.ttf') format('ttf');
+}
 
-  @font-face {
-    font-family: 'Mona Sans';
-    src:
-      url('https://fonts.cdnfonts.com/css/mona-sans') format('woff2 supports variations'),
-      url('https://fonts.cdnfonts.com/css/mona-sans') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-  }            
+body {
+  font-family: 'Mona Sans', sans-serif;
+  box-sizing:boder-box;
+  margin:0;
+  padding:0;
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
   html,
@@ -95,6 +103,7 @@ body {
 
 .text-input-ov {
   width: 100px;
+  font-color:#9ca3af;
 }
 
 .card-ov {
