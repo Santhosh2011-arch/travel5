@@ -12,9 +12,17 @@ body {
   box-sizing: border-box;
   margin:0;
   padding:0;
-  
-  
+  overflow-x: hidden;
 }
+  
+  
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
@@ -25,6 +33,17 @@ body {
   body {
     width: fit-content; 
     font-family: 'Mona Sans';
+    overflow-x: hidden;
+    margin:0;
+  }
+
+  @media (max-width: 640px) {
+    .datepicker-placeholder {
+      width: 100%; /* Ensure DatePicker adjusts to small screens */
+    }
+    .dropdown-menu {
+      max-width: 90vw; /* Restrict dropdown width */
+    }
   }
   .web-absolute {
     position: unset;

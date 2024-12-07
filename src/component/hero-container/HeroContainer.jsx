@@ -72,6 +72,43 @@ const HeroSection = () => {
       >
       {/* Date Picker */}
       <div className="relative flex items-center gap-x-2">
+  {/* Button to open DatePicker */}
+  <button
+    onClick={() => {
+      datePickerRef.current?.setOpen(true); // Open the DatePicker
+      setDropdown("date"); // Set dropdown to date
+    }}
+    className="flex items-center gap-x-2 bg-white/50 px-4 py-2 rounded-full text-black  hover:bg-yellow-700 ease-in-out duration-300 "
+    
+  >
+    <span className="whitespace-nowrap overflow-hidden overflow-ellipsis">
+      {startDate
+        ? startDate.toLocaleDateString() // Show selected date
+        : "Select Date"} {/* Show placeholder if no date is selected */}
+    </span>
+    <FaChevronDown className="cursor-pointer" />
+  </button>
+
+  {/* DatePicker */}
+  {dropdown === "date" && (
+    <div className="absolute z-50 top-full mt-2">
+      <DatePicker
+        selected={startDate}
+        onChange={(date) => {
+          setStartDate(date); // Update selected date
+          setDropdown(null); // Close dropdown
+        }}
+        placeholderText="Select Date"
+        className="bg-transparent text-black focus:outline-none caladar-ov datepicker-placeholder"
+        ref={datePickerRef}
+        open={dropdown === "date"} // Open only when dropdown is "date"
+        onClickOutside={() => setDropdown(null)} // Close on outside click
+      />
+    </div>
+  )}
+</div>
+
+      {/* <div className="relative flex items-center gap-x-2">
          <button
           onClick={() => setDropdown((prev) => (prev === "date" ? null : "date"))}
           className="flex items-center gap-x-2 bg-white/50 px-4 py-2 rounded-full text-black"
@@ -87,7 +124,7 @@ const HeroSection = () => {
                   className="cursor-pointer"
                 />
         </button>
-      </div>
+      </div> */}
 
 
         {/* Budget Picker */}
