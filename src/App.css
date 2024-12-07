@@ -9,9 +9,11 @@
 
 body {
   font-family: 'Mona Sans', sans-serif;
-  box-sizing:boder-box;
+  box-sizing: border-box;
   margin:0;
   padding:0;
+  
+  
 }
 
 
@@ -21,7 +23,7 @@ body {
 @media only screen and (max-width: 600px) {
   html,
   body {
-    width: fit-content;
+    width: fit-content; 
     font-family: 'Mona Sans';
   }
   .web-absolute {
@@ -142,9 +144,10 @@ body {
 
 .title-top{
 
-  font-size:20px;
+  font-size:1.25rem;
 }
 
 .title-bottom{
-  font-size:50px;
+  font-size:2.5rem;
 }
+

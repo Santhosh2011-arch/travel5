@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import PageTitle from "../title/PageTitle";
 import { FaChevronDown, FaSearch } from "react-icons/fa";
@@ -61,8 +60,8 @@ const HowItWorks = () => {
                   <DatePicker
                     selected={startDate}
                     onChange={(date) => setStartDate(date)}
-                    placeholderText="Select Date"
-                    className="w-full bg-white/50 px-4 py-1.5 rounded-full text-black focus:outline-none text-sm"
+                    placeholderText=" Date"
+                    className="w-full bg-white/50 px-4 py-2 rounded-full text-black focus:outline-none text-sm hover:bg-yellow-700 ease-in-out duration-300"
                     ref={datePickerRef}
                   />
                   <FaChevronDown
@@ -75,11 +74,10 @@ const HowItWorks = () => {
                 <div className="relative flex items-center gap-x-2 w-1/3">
                   <button
                     onClick={() => toggleDropdown("budget")}
-                    className="w-full bg-white/50 px-4 py-1.5 rounded-full text-black text-sm hover:bg-yellow-700 ease-in-out duration-300"
-                    style={{ padding: "8px 16px", fontSize: "0.875rem" }}
+                    className="w-full flex items-center justify-between bg-white/50 px-4 py-2 rounded-full text-black text-sm hover:bg-yellow-700 ease-in-out duration-300"
                   >
-                    {budget || "Budget"}
-                    <FaChevronDown className="ml-2" />
+                    <span>{budget || "Budget"}</span>
+                    <FaChevronDown />
                   </button>
                   {dropdown === "budget" && (
                     <div className="absolute top-full left-0 mt-2 w-full bg-white/30 backdrop-blur-md border border-white/40 rounded shadow-md z-50">
@@ -109,11 +107,10 @@ const HowItWorks = () => {
                 <div className="relative flex items-center gap-x-2 w-1/3">
                   <button
                     onClick={() => toggleDropdown("guests")}
-                    className="w-full bg-white/50 px-4 py-1.5 rounded-full text-black text-sm hover:bg-yellow-700 ease-in-out duration-300"
-                    style={{ padding: "8px 16px", fontSize: "0.875rem" }}
+                    className="w-full flex items-center justify-between bg-white/50 px-4 py-2 rounded-full text-black text-sm hover:bg-yellow-700 ease-in-out duration-300"
                   >
-                    {guests || "Guests"}
-                    <FaChevronDown className="ml-2" />
+                    <span>{guests || "Guests"}</span>
+                    <FaChevronDown />
                   </button>
                   {dropdown === "guests" && (
                     <div className="absolute top-full left-0 mt-2 w-full bg-white/30 backdrop-blur-md border border-white/40 rounded shadow-md z-50">
@@ -142,7 +139,7 @@ const HowItWorks = () => {
                 {/* Search Button */}
                 <button
                   onClick={handleSearch}
-                  className="bg-white/50 text-black px-6 py-1.5 rounded-full text-sm flex items-center gap-x-2 hover:bg-yellow-700 ease-in-out duration-300"
+                  className="bg-white/50 text-black px-6 py-2 rounded-full text-sm flex items-center gap-x-2 hover:bg-yellow-700 ease-in-out duration-300"
                 >
                   <FaSearch />
                   Search
@@ -191,6 +188,12 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
+
+
+
+
+
+
 
 
 
@@ -482,7 +485,7 @@ export default HowItWorks;
 //           </div>
 //         </div>
 
-//         {/* Right Section: Steps */}
+//         {/* Right Section */}
 //         <div className="w-full lg:w-1/2 space-y-6 right-sectio">
 //           <PageTitle title="How it works" subTitle="One click for you" />
 //           <div className="space-y-6 steps">
